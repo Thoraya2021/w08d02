@@ -2,6 +2,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
+require("./db/index");
+
 
 //run and config express 
 const app = express();
@@ -12,6 +14,7 @@ dotenv.config();
 //middel ware uses what i install and build should write here 
 app.use(express.json());
 app.use(cors());
+
 
 
 
