@@ -7,4 +7,4 @@ const usermodel = new mongoose.Schema({
     role:  [{ type: mongoose.Schema.Types.ObjectId, ref: "role" }],
   });
 
-  module.exports =mongoose.model('User',username)
+  module.exports =mongoose.model('User',usermodel)
